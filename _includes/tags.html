@@ -1,0 +1,18 @@
+<div class="container-fluid mtb">
+    <div class="row">
+        {% assign all = '' %}
+        {% for project in site.projects %}
+            {% assign tag = project.tags | join: '|' | append: '|' %}
+            {% assign all = all | append: tag %}
+        {% endfor %}
+        {% assign array = all | split: '|' | sort | uniq %}
+
+        <div class="tags">
+            <button class="btn btn-theme" data-filter="">All</button>
+        {% for i in array %}
+            <button class="btn btn-theme" data-filter=".{{ i }}">{{ i }}</button>
+        {% endfor %}
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->

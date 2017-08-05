@@ -1,0 +1,22 @@
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+        <div class="recentitems portfolio">
+            {% for project in site.projects reversed limit:include.limit %}
+                <div class="portfolio-item graphic-design {{ project.tags | join: ' ' }}">
+                    <div class="he-wrap tpl6">
+                        <a href="{{  project.url | prepend: site.baseurl }}">
+                            <div class="img-overlay" data-gif="{{ project.gif }}" data-img="{{ project.img }}" style="background-image: url('{{ project.img }}')" alt="{{ project.alt }}">
+                                <div class="he-view">
+                                    <div class="bg a0" data-animate="fadeIn">
+                                        <h3 class="a1" data-animate="fadeInDown">{{ project.title }}</h3>
+                                    </div><!-- he bg -->
+                                </div><!-- he view -->
+                            </div>
+                        </a>
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            {% endfor %}
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->

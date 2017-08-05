@@ -1,0 +1,25 @@
+---
+layout: project
+title:  "DREAM EXPERIMENTS 空想実験 最強電撃娘"
+date:   2015-03-28 12:00:00
+author: Jon Gao
+categories:
+- project
+img: /assets/img/project/dream-experiments_thumbnail_600x225.png
+filter: blur
+carousel:
+- single01.jpg
+- single02.jpg
+- single03.jpg
+tags:
+- Game
+- H-Game
+- Commission
+client: Tenson3D
+website: http://www.dlsite.com/maniax/work/=/product_id/RJ152943.html
+---
+####YOUR PROJECT NAME
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+####Our Proposal
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

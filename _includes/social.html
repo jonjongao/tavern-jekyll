@@ -1,0 +1,9 @@
+<div class="navbar navbar-default navbar-collapse" role="navigation">
+  <ul class="nav navbar-nav social-nav">
+    {% for media in site.social limit: 6 %}
+      <li>
+          <a href={{ media.url }}><img src={{ media.icon }} class="img-responsive"></a>
+      </li>
+    {% endfor %}
+</ul>
+</div>

@@ -1,0 +1,19 @@
+<div id="profile" class="container-fluid">
+    <div class="row">
+        <div id="avatar" class="col-xs-4 col-sm-2 col-md-4">
+            <img src="/assets/img/avatar.jpg" alt="{{ site.author }}" class="img-responsive img-circle">
+        </div>
+        <div id="description" class="col-xs-12 col-md-12">
+            <p>{{ site.description }}</p>
+        </div>
+        <div id="social" class="col-xs-12 col-md-12">
+            <ul class="nav navbar-nav social-nav">
+                {% for media in site.social limit: 6 %}
+                <li>
+                    <a href={{ media.url }}><img src={{ media.icon }} class="img-responsive"></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

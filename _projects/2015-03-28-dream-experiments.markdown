@@ -12,6 +12,7 @@ carousel:
 - single02.jpg
 - single03.jpg
 tags:
+- NSFW
 - Game
 - H-Game
 - Commission

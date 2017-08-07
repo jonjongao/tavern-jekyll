@@ -16,14 +16,76 @@
 
   ga('create', '{{ site.analytics }}', 'auto');
   ga('send', 'pageview');
-
 </script>
 {% endif %}
 <script>
-// Portfolio
+// Initial Isotope filters and Portfolio item hover effect
+$(document).ready(function() {
+  var $container = $('.portfolio');
+  var filters = {};
+
+  $('#nsfw').bootstrapToggle('off');
+  hideNotSafeForWorkItems();
+
+  $('#nsfw').change(function() {
+    if($(this).prop('checked') == true) {
+      showNotSafeForWorkItems();
+    } else {
+      hideNotSafeForWorkItems();
+    }
+  });
+
+  $('.tags').on('click', '.btn', function() {
+    var filterGroup = $(this).parents('.button-group').attr('data-filter-group');
+    var filterValue = $(this).attr('data-filter');
+
+    setFilter(filterGroup, filterValue);
+  });
+
+  function setFilter(filterGroup, filterValue) {
+    filters[filterGroup] = filterValue;
+    var value = concatValues(filters);
+    $container.isotope({ filter: value });
+  }
+
+  function showNotSafeForWorkItems() {
+    setFilter('nsfw', '');
+  }
+
+  function hideNotSafeForWorkItems() {
+    setFilter('nsfw', '.Safe');
+  }
+
+  function concatValues(obj) {
+    var value = '';
+    for ( var prop in obj ) {
+      value += obj[ prop ];
+    }
+    return value;
+  }
+
+  $('.portfolio').find('.img-overlay').hover(showGif, showImg);
+
+  function showGif() {
+    if($(this).data('gif') != '') {
+      $(this).css(
+        'background-image', 'url(' + $(this).data('gif') + ')'
+      );
+    }
+  }
+
+  function showImg() {
+    if($(this).data('gif') != '') {
+      $(this).css(
+        'background-image', 'url(' + $(this).data('img') + ')'
+      );
+    }
+  }
+});
+// Responsive Portfolio
 (function($) {
-	"use strict";
-	var $container = $('.portfolio'),
+    "use strict";
+    var $container = $('.portfolio'),
 		$items = $container.find('.portfolio-item'),
 		portfolioLayout = 'fitRows';
 
@@ -44,55 +106,10 @@
 		}
 		}, refreshWaypoints());
 
-    var filters = {};
-
-    $('.tags').on('click', '.btn', function() {
-      var $this = $(this);
-      // get group key
-      var $buttonGroup = $this.parents('.button-group');
-      var filterGroup = $buttonGroup.attr('data-filter-group');
-      // set filter for group
-      filters[ filterGroup ] = $this.attr('data-filter');
-      // combine filters
-      var filterValue = concatValues( filters );
-      // set filter for Isotope
-      $container.isotope({ filter: filterValue });
-    });
-
-    $container.find('.img-overlay').hover(function() {
-      if($(this).data('gif') != '') {
-        $(this).css(
-          'background-image', 'url(' + $(this).data('gif') + ')'
-        );
-      }
-    }, function() {
-      if($(this).data('gif') != '') {
-        $(this).css(
-          'background-image', 'url(' + $(this).data('img') + ')'
-        );
-      }
-    });
-
-    function concatValues( obj ) {
-      var value = '';
-      for ( var prop in obj ) {
-        value += obj[ prop ];
-      }
-      return value;
-    }
-
 		function refreshWaypoints() {
 			setTimeout(function() {
 			}, 1000);
 		}
-
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
 
 		function getColumnNumber() {
 			var winWidth = $('#portfoliowrap').width(),

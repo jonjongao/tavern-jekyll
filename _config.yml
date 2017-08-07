@@ -1,11 +1,15 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SOLID.
+title: TARVERN
+author: Jon Gao
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://yourdomain.com"
+header:
+  color: "#999999"
+  image: http://placehold.it/800x800
 
 # Build settings
 markdown: kramdown
@@ -34,16 +38,33 @@ collections:
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
-  - title: facebook
-    url:
-  - title: twitter
-    url:
-  - title: instagram
-    url:
-  - title: tumblr
-    url:
+  - title: Twitter
+    icon: /assets/svg/twitter-sign.svg
+    url: https://twitter.com/jongaodev
+  - title: Tumblr
+    icon: /assets/svg/tumblr-logo.svg
+    url: https://rosa89n20.tumblr.com
+  - title: Github
+    icon: /assets/svg/github-sign.svg
+    url: https://github.com/rosa89n20
+  - title: GameJolt
+    icon: /assets/svg/gamejolt-sign.svg
+    url: http://gamejolt.com/@rosa89n20
+  - title: Itch.io
+    icon: /assets/svg/itchio-sign.svg
+    url: https://rosa89n20.itch.io/
+  - title: DeviantArt
+    icon: /assets/svg/deviantart-sign.svg
+    url: http://rosa89n20.deviantart.com/
+  - title: ArtStation
+    icon: /assets/svg/artstation-sign.svg
+    url: https://www.artstation.com/artist/rosa89n20
+  - title: LinkedIn
+    icon: /assets/svg/linkedin-sign.svg
+    url: https://www.linkedin.com/in/rosa89n20/
+  - title: Steam
+    icon: /assets/svg/steam-sign.svg
+    url: http://steamcommunity.com/id/rosa89n20
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:

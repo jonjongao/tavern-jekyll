@@ -100,6 +100,7 @@ a:focus {
 	min-height: 70px;
 	padding-top: 10px;
 	margin-bottom: 0px;
+	position: absolute;
 }
 
 .navbar-brand {
@@ -117,6 +118,17 @@ a:focus {
 	font-size: 12px;
 }
 
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+}
+
+.navbar-nav > li {
+	float: none;
+	display: inline-block;
+}
+
 .navbar-default .navbar-nav > li > a:hover {
 	color: {{ site.colors.primary }};
 }
@@ -127,7 +139,7 @@ a:focus {
 }
 
 .navbar-default {
-	background-color: {{ site.colors.secondary }};
+	background-color: transparent;
 	border-color: transparent;
 }
 
@@ -216,11 +228,13 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
-	min-height: 0px;
-	padding-top: 100px;
-	padding-bottom: 50px;
+	background-image: url({{ site.header.image }});
+	background-repeat: no-repeat;
+	background-position: calc(50%) calc(50%);
+	background-size: 50%;
 	text-align: center;
+	height: 500px;
+	background-color: {{ site.header.color }};
 }
 
 #headerwrap h3, h5 {
@@ -237,6 +251,39 @@ a:focus {
 	margin: 0 auto;
 }
 
+#contentwrap {
+	height: 100%;
+}
+
+#profile {
+	position: absolute;
+	bottom: 5px;
+}
+
+#avatar {
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+} img {
+	max-height: 200px
+}
+
+@media (min-width: 992px) {
+    #headerwrap {
+        height: 100%;
+        float: left;
+        position: fixed;
+				background-size: 90%;
+    }
+    #contentwrap {
+        float: right;
+        position: relative;
+    }
+		#profile {
+			max-height: 40%;
+		}
+}
+
 /* Services Wrap */
 #service {
 	margin-top: 0px;
@@ -244,9 +291,9 @@ a:focus {
 }
 
 #service i {
-	color: {{ site.colors.primary }};
 	font-size: 60px;
 	padding: 15px;
+	color: {{ site.colors.primary }};
 }
 
 /* Portfolio Wrap */
@@ -512,24 +559,6 @@ a.anchor{
 /*------------------
 	Custom Element
 ------------------*/
-
-.portfolio-item .none {
-		-webkit-filter: none;
-		filter: none;
-}
-
-.portfolio-item .blur {
-		-webkit-filter: blur(10px) grayscale(100%);
-		filter: blur(10px) grayscale(100%);
-		-webkit-transition: -webkit-filter 100ms linear;
-}
-
-.portfolio-item .blur:hover {
-		-webkit-filter: none;
-		filter: none;
-		-webkit-transition: -webkit-filter 100ms linear;
-}
-
 .portfolio .img-overlay {
 		background-size: cover;
 		background-color: rgba(0, 0, 0, 0);
@@ -544,17 +573,9 @@ a.anchor{
 		padding-right: 0px;
 }
 
-.banner {}
-.content {}
-
-@media (min-width: 992px) {
-		.banner {
-				height: 100%;
-				float: left;
-				position: fixed;
-		}
-		.content {
-				float: right;
-				position: relative;
-		}
+.social-nav img {
+	min-width: 30px;
+	max-width: 30px;
+	min-height: 30px;
+	max-height: 30px;
 }

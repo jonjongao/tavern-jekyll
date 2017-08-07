@@ -3,7 +3,11 @@
         {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
         <div class="recentitems portfolio">
             {% for project in site.projects reversed limit:include.limit %}
+                {% if project.tags contains 'NSFW' %}
                 <div class="portfolio-item graphic-design {{ project.tags | join: ' ' }}">
+                {% else %}
+                <div class="portfolio-item graphic-design {{ project.tags | join: ' ' | append: ' Safe' }}">
+                {% endif %}
                     <div class="he-wrap tpl6">
                         <a href="{{  project.url | prepend: site.baseurl }}">
                             <div class="img-overlay" data-gif="{{ project.gif }}" data-img="{{ project.img }}" style="background-image: url('{{ project.img }}')" alt="{{ project.alt }}">

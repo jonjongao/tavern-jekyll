@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-    {% include head.html %}
+{% include head.html %}
 
-    <body>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="banner col-xs-12 col-md-5 no-gutters">
-            {% include nav.html %}
-          </div>
-          <div class="content col-xs-12 col-md-7 no-gutters">
-            {{ content }}
-            {% include footer.html %}
-            {% include js.html %}
-          </div>
-        </div>
-      </div>
+<body>
+    <div id="headerwrap" class="col-xs-12 col-md-5 no-gutters">
+        {% include nav.html %}
+        {% include profile.html %}
+    </div>
+    <div id="contentwrap" class="col-xs-12 col-md-7 no-gutters">
+        {{ content }}
+        {% include footer.html %}
+        {% include js.html %}
+    </div>
+</body>
 
-
-
-
-
-    </body>
 </html>

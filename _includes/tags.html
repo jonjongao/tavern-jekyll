@@ -5,9 +5,9 @@
             {% assign tag = project.tags | join: '|' | append: '|' %}
             {% assign all = all | append: tag %}
         {% endfor %}
-        {% assign array = all | split: '|' | sort | uniq %}
+        {% assign array = all | remove: 'NSFW|' | split: '|' | sort | uniq %}
 
-        <div class="tags">
+        <div class="tags button-group" data-filter-group="tags">
             <button class="btn btn-theme" data-filter="">All</button>
         {% for i in array %}
             <button class="btn btn-theme" data-filter=".{{ i }}">{{ i }}</button>

@@ -62,15 +62,15 @@ social:
   - title: DeviantArt
     icon: /assets/svg/deviantart-sign.svg
     url: http://rosa89n20.deviantart.com/
-  - title: ArtStation
-    icon: /assets/svg/artstation-sign.svg
-    url: https://www.artstation.com/artist/rosa89n20
   - title: LinkedIn
     icon: /assets/svg/linkedin-sign.svg
     url: https://www.linkedin.com/in/rosa89n20/
   - title: Steam
     icon: /assets/svg/steam-sign.svg
     url: http://steamcommunity.com/id/rosa89n20
+  - title: ArtStation
+    icon: /assets/svg/artstation-sign.svg
+    url: https://www.artstation.com/artist/rosa89n20
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:

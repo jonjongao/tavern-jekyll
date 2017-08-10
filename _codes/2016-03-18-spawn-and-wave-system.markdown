@@ -1,13 +1,13 @@
 ---
 layout: project
-title:  "Animator Controller Copycat for Unity"
-date:   2017-06-02 12:00:00
+title:  "Spawn and Wave System for Unity"
+date:   2016-03-18 12:00:00
 author: Jon Gao
 categories:
 - project
-img: http://i.imgur.com/Kq1eUln.jpg
+img: http://i.imgur.com/JPydIuy.png
 carousel:
-- single01.jpg
+- single01.jpgS
 - single02.jpg
 - single03.jpg
 tags:
@@ -15,7 +15,7 @@ tags:
 - Tool
 - Unity
 client: 
-website: https://github.com/rosa89n20/AnimatorControllerCopycat
+website: https://github.com/rosa89n20/SpawnAndWaveSystem
 ---
 ####YOUR PROJECT NAME
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

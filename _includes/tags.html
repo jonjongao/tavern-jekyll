@@ -1,18 +1,17 @@
-<div class="container-fluid mtb">
+<div class="container-fluid">
     <div class="row">
-        {% assign all = '' %}
-        {% for project in site.projects %}
-            {% assign tag = project.tags | join: '|' | append: '|' %}
-            {% assign all = all | append: tag %}
-        {% endfor %}
-        {% assign array = all | remove: 'NSFW|' | split: '|' | sort | uniq %}
+        <div class="col-md-12">
+            {% assign all = '' %}
+            {% for project in site.projects %}
+                {% assign tag = project.tags | join: '|' | append: '|' %}
+                {% assign all = all | append: tag %}
+            {% endfor %}
+            {% assign array = all | remove: 'HIDE|' | split: '|' | sort | uniq %}
 
-        <div class="tags button-group" data-filter-group="tags">
-            <button class="btn btn-theme" data-filter="">All</button>
-        {% for i in array %}
-            <button class="btn btn-theme" data-filter=".{{ i }}">{{ i }}</button>
-        {% endfor %}
+            <div class="tags button-group" data-filter-group="tags">
+                <button class="btn btn-theme" data-filter="">All</button> {% for i in array %}
+                <button class="btn btn-theme" data-filter=".{{ i }}, .ALWAYS">{{ i }}</button> {% endfor %}
+            </div>
         </div>
-
-    </div><! --/row -->
-</div><! --/container -->
+    </div>
+</div>

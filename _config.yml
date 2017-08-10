@@ -8,7 +8,7 @@ analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://yourdomain.com"
 header:
-  color: "#999999"
+  color: "#000000"
   image: http://placehold.it/800x800
 
 # Build settings
@@ -33,6 +33,12 @@ collections:
   questions:
     output: true
     permalink: /questions/:title/
+  arts:
+    output: true
+    permalink: /arts/:title/
+  codes:
+    output: true
+    permalink: /codes/:title/
 
 ### CONTACT SETTINGS ###
 
@@ -129,7 +135,13 @@ clients:
     img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+about:
+  avatar: /assets/img/about/avatar.jpg
+  name: Jon Gao
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  experience:
+  skills:
+  interests:
 
 # Testimonial content. Shown on Home and About page.
 testimonial:

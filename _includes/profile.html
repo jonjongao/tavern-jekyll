@@ -7,7 +7,7 @@
             <p>{{ site.description }}</p>
         </div>
         <div id="social" class="col-xs-12 col-md-12">
-            <ul class="nav navbar-nav social-nav">
+            <ul class="nav navbar-nav">
                 {% for media in site.social limit: 6 %}
                 <li>
                     <a href={{ media.url }}><img src={{ media.icon }} class="img-responsive"></a>

@@ -1,0 +1,24 @@
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        {% if include.title %}
+        <h3>{{ include.title }}</h3>{% endif %}
+        <div class="recentitems portfolio">
+            {% for project in site.codes reversed limit:include.limit %}
+                <div class="portfolio-item graphic-design ALWAYS SAFE">
+                    <div class="he-wrap tpl6">
+                        <a href="{{  project.url | prepend: site.baseurl }}">
+                            {% assign bg_color = project.background-color %}
+                            <div class="img-overlay" data-gif="{{ project.gif }}" data-img="{{ project.img }}" style="background-image: url('{{ project.img }}'); background-color: {{ bg_color | default: '#5a5a5a' }}" alt="{{ project.alt }}">
+                                <div class="he-view">
+                                    <div class="bg a0" data-animate="fadeIn">
+                                        <h3 class="a1" data-animate="flipInUp">{{ project.title }}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>

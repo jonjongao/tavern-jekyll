@@ -24,14 +24,13 @@ $(document).ready(function() {
   var $container = $('.portfolio');
   var filters = {};
 
-  $('#nsfw').bootstrapToggle('off');
-  hideNotSafeForWorkItems();
+  hideHiddenItems();
 
-  $('#nsfw').change(function() {
+  $('#contentguard').change(function() {
     if($(this).prop('checked') == true) {
-      showNotSafeForWorkItems();
+      hideHiddenItems();
     } else {
-      hideNotSafeForWorkItems();
+      showHiddenItems();
     }
   });
 
@@ -48,12 +47,12 @@ $(document).ready(function() {
     $container.isotope({ filter: value });
   }
 
-  function showNotSafeForWorkItems() {
-    setFilter('nsfw', '');
+  function showHiddenItems() {
+    setFilter('contentguard', '');
   }
 
-  function hideNotSafeForWorkItems() {
-    setFilter('nsfw', '.Safe');
+  function hideHiddenItems() {
+    setFilter('contentguard', '.SAFE');
   }
 
   function concatValues(obj) {

@@ -9,15 +9,27 @@ categories:
 - project
 img: /assets/img/project/cui-cui_thumbnail_300x300.jpg
 gif: /assets/img/project/cui-cui_gif_300x300.gif
+cover:
+    output: true
+    src: /assets/img/project/carousel/cui-cui/post-video-1.webm
 filter: none
 carousel:
 - cui-cui/post-image-1_800x600.jpg
 - cui-cui/post-image-2_800x600.jpg
 - cui-cui/post-image-3_800x600.jpg
 - cui-cui/post-image-4_800x600.jpg
+- cui-cui/post-image-5_600x400.gif
 tags:
 - Game
 client:
 website:
 ---
-Story is about little fox on the journey of restore family legacy manor by stamping leaf and collecting seed.
+Story is about little fox on the journey of restore family legacy garden by stamping leaf and collecting seed.
+
+Unlock new tree, plant, feed and grow! 
+
+This's the 2nd project I work with my wife, We experiment random game idea while I teach her 2D game developing process and required knowledge(ex: Making Spritesheet, Important of Sprite pivot, Unify Sprite scale etc.)
+
+Game idea is because my wife like stamping dry leaf, literally that's it :D
+
+So why no make a game out of it, right?

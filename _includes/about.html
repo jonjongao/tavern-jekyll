@@ -11,12 +11,34 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3>Experience</h3>
+                    {% for exp in site.about.experience %}
+                    <ul>
+                        <li>
+                            <strong>{{ exp.job }}</strong><br> {{ exp.name }}<br>
+                            <small>{{ exp.time }}</small>
+                        </li>
+                    </ul>
+                    {% endfor %}
                 </div>
                 <div class="col-md-4">
                     <h3>Skills</h3>
+                    {% for skl in site.about.skills %}
+                    <ul>
+                        <li>
+                            <p>{{ skl }}</p>
+                        </li>
+                    </ul>
+                    {% endfor %}
                 </div>
                 <div class="col-md-4">
                     <h3>Interests</h3>
+                    {% for int in site.about.interests %}
+                    <ul>
+                        <li>
+                            <p>{{ int }}</p>
+                        </li>
+                    </ul>
+                    {% endfor %}
                 </div>
             </div>
         </div>

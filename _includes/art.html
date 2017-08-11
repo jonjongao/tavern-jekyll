@@ -6,7 +6,7 @@
             {% for project in site.arts reversed limit:include.limit %}
                 <div class="portfolio-item graphic-design ALWAYS SAFE">
                     <div class="he-wrap tpl6">
-                        <a href="{{  project.url | prepend: site.baseurl }}">
+                        <a href="{{ project.website }}" target="_blank">
                             {% assign bg_color = project.background-color %}
                             <div class="img-overlay" data-gif="{{ project.gif }}" data-img="{{ project.img }}" style="background-image: url('{{ project.img }}'); background-color: {{ bg_color | default: '#5a5a5a' }}" alt="{{ project.alt }}">
                                 <div class="he-view">

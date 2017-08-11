@@ -1,10 +1,11 @@
 ---
 layout: project
 title:  "Crash Corgi Friends"
-alt: Crash Corgi Friends Game Developing
+alt: Play as Corgi collecting lots of Gift and yum yum yum!!!!
 date:   2016-12-25 12:00:00
 author: Jon Gao
 categories:
+- "#CORGSMAS"
 - project
 img: /assets/img/project/crash-corgi-friends_thumbnail_300x300.jpg
 gif: /assets/img/project/crash-corgi-friends_gif_300x300.gif

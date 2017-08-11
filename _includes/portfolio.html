@@ -10,11 +10,13 @@
             <div class="portfolio-item graphic-design {{ project.tags | join: ' ' | append: ' SAFE' }}">
             {% endif %}
                 <div class="he-wrap tpl6">
-                    <a href="{{  project.url | prepend: site.baseurl }}">
+                    <a href="{{ project.url | prepend: site.baseurl }}">
                         <div class="img-overlay" data-gif="{{ project.gif }}" data-img="{{ project.img }}" style="background-image: url('{{ project.img }}')" alt="{{ project.alt }}">
                             <div class="he-view">
                                 <div class="bg a0" data-animate="fadeIn">
                                     <h3 class="a1" data-animate="flipInUp">{{ project.title }}</h3>
+                                    <p class="a1" data-animate="flipInUp"><small>{{ project.categories | first }}</small></p>
+                                    <p class="a1" data-animate="flipInUp">{{ project.alt }}</p>
                                 </div>
                             </div>
                         </div>

@@ -1,25 +1,23 @@
 ---
 layout: project
 title:  "Cui Cui"
-alt: Cui Cui Game Developing
+alt: Little Fox on the journey of restore family legacy manor by stamping leaf and collecting seed.
 date:   2017-05-09 12:00:00
 author: Jon Gao
 categories:
+- Personal Project
 - project
 img: /assets/img/project/cui-cui_thumbnail_300x300.jpg
 gif: /assets/img/project/cui-cui_gif_300x300.gif
 filter: none
 carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+- cui-cui/post-image-1_800x600.jpg
+- cui-cui/post-image-2_800x600.jpg
+- cui-cui/post-image-3_800x600.jpg
+- cui-cui/post-image-4_800x600.jpg
 tags:
 - Game
 client:
 website:
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Story is about little fox on the journey of restore family legacy manor by stamping leaf and collecting seed.

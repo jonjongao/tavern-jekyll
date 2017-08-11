@@ -138,16 +138,31 @@ clients:
 about:
   avatar: /assets/img/about/avatar.jpg
   name: Jon Gao
-  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  description: "Hell World!"
   experience:
+    - job: Programer
+      name: CSoft Taiwan
+      time: Jul 2016 - Mar 2017
+    - job: Programer
+      name: Shinning Precision
+      time: Jun 2014 - Jul 2016
+    - job: Research and Teaching Assistant
+      name: National Taiwan University and Lunghwa University
+      time: Jan 2012 - Feb 2014
+    - job: Game Jams, Personal Game Project, Freelance
+      name: Battleham
+      time: In spare time
   skills:
+    - <strong>Solution Thinking</strong>, <strong>Design Mindset</strong>, <strong>Hobby Maker</strong>, <strong>Team Player</strong>, <strong>Self-Taught</strong>, <strong>Version Control</strong>, Team Managing
+    - Mainly Unity, Visual Studio, GameMaker Studio, Spine, Flash, Photoshop, Arduino
+    - Interactive design experience, Wii Remote, Kinect, VR(Oculus/Vive/Mobile), AR, LeapMotion, MYO. I'll make my own device with Arduino depend on usage case.
+    - Front-end developing, HTML, CSS, Bootstrap, JavaScript, jQuery, Liquid. Integrate with WordPress and Jekyll
+    - C#, JavaScript, ActionScript, GML, C++ on Arduino Project
   interests:
-
-# Testimonial content. Shown on Home and About page.
-testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO
+    - Hack and Slash, Couch-Multiplayer, Atmosphere, Blood, Lively game environment
+    - Medieval Fantasy, Serious Sci-fi, Story Geek, Retro, Vaporwave
+    - Solving problem, Experiment, Make random story
+    - Home making Game SFX clip (Not original record, but fix, clean and mix)
 
 portfolio:
   img_width: 300

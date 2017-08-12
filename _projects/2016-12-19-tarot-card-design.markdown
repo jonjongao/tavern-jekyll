@@ -1,21 +1,10 @@
 ---
 layout: project
-title:  "Tarot Card Design"
+title: "Tarot Card Design"
 alt: Tarpt Card Design with Battleham team
-date:   2016-12-19 12:00:00
-author: Jon Gao
-categories:
-- project
-img: /assets/img/project/tarot-card-design_thumbnail_300x300.jpg
-gif:
-filter: none
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+date: 2016-12-19 12:00:00
 tags:
 - Illustration
-client:
 website:
 ---
 ####YOUR PROJECT NAME

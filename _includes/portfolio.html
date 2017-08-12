@@ -4,6 +4,20 @@
         <h3>{{ include.title }}</h3>{% endif %}
         <div class="recentitems portfolio">
             {% for project in site.projects reversed limit:include.limit %}
+
+            {% assign thumbnail_path = '' %}
+            {% assign name = project.url | split: '/' | last %}
+            {% assign directory_url = 'assets/img/project/' | append: name | append: '/' | prepend: site.baseurl %}
+            {% for file in site.static_files %}
+            {% if file.path contains directory_url %}
+            {% if file.path contains 'thumbnail' %}
+                {% assign asset = file.path | join: '|' | append: '|' %}
+                {% assign thumbnail_path = thumbnail_path | append: asset %}
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            {% assign thumbnail_path = thumbnail_path | split: '|' | sort %}
+
             {% if project.tags contains 'HIDE' %}
             <div class="portfolio-item graphic-design {{ project.tags | join: ' ' }}">
             {% else %}
@@ -11,11 +25,11 @@
             {% endif %}
                 <div class="he-wrap tpl6">
                     <a href="{{ project.url | prepend: site.baseurl }}">
-                        <div class="img-overlay" data-gif="{{ project.gif }}" data-img="{{ project.img }}" style="background-image: url('{{ project.img }}')" alt="{{ project.alt }}">
+                        <div class="img-overlay" data-normal="{{ thumbnail_path | first }}" data-hover="{{ thumbnail_path | last }}" style="background-image: url('{{ thumbnail_path | first }}')" alt="{{ project.alt }}">
                             <div class="he-view">
                                 <div class="bg a0" data-animate="fadeIn">
                                     <h3 class="a1" data-animate="flipInUp">{{ project.title }}</h3>
-                                    <p class="a1" data-animate="flipInUp"><small>{{ project.categories | first }}</small></p>
+                                    <p class="a1" data-animate="flipInUp"><small>{{ project.client }}</small></p>
                                     <p class="a1" data-animate="flipInUp">{{ project.alt }}</p>
                                 </div>
                             </div>

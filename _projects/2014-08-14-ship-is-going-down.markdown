@@ -3,8 +3,6 @@ layout: project
 title:  "Ship Is Going Down"
 date:   2014-08-14 12:00:00
 author: Jon Gao
-categories:
-- project
 img: /assets/img/project/ship-is-going-down_thumbnail_600x225.jpg
 filter: none
 carousel:

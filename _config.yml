@@ -168,3 +168,13 @@ portfolio:
   img_width: 300
   img_height: 300
   grid_space: 10
+
+defaults:
+  -
+    scope:
+      path: "_projects"
+    values:
+      client: "Personal Project"
+      alt: ""
+      author: Jon Gao
+      categories: ["project"]

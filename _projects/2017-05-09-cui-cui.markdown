@@ -1,27 +1,10 @@
 ---
 layout: project
-title:  "Cui Cui"
+title: "Cui Cui"
 alt: Little Fox on the journey of restore family legacy manor by stamping leaf and collecting seed.
 date:   2017-05-09 12:00:00
-author: Jon Gao
-categories:
-- Personal Project
-- project
-img: /assets/img/project/cui-cui_thumbnail_300x300.jpg
-gif: /assets/img/project/cui-cui_gif_300x300.gif
-cover:
-    output: true
-    src: /assets/img/project/carousel/cui-cui/post-video-1.webm
-filter: none
-carousel:
-- cui-cui/post-image-1_800x600.jpg
-- cui-cui/post-image-2_800x600.jpg
-- cui-cui/post-image-3_800x600.jpg
-- cui-cui/post-image-4_800x600.jpg
-- cui-cui/post-image-5_600x400.gif
 tags:
 - Game
-client:
 website:
 ---
 Story is about little fox on the journey of restore family legacy garden by stamping leaf and collecting seed.

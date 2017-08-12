@@ -3,17 +3,32 @@ layout: default
 ---
 {% include wrap.html %}
 
+{% assign all_asset_path = '' %}
+{% assign name = page.url | split: '/' | last %}
+{% assign directory_url = 'assets/img/project/' | append: name | append: '/' | prepend: site.baseurl %}
+{% for file in site.static_files %}
+{% if file.path contains directory_url %}
+    {% assign asset = file.path | join: '|' | append: '|' %}
+    {% assign all_asset_path = all_asset_path | append: asset %}
+{% endif %}
+{% endfor %}
+{% assign all_asset_path = all_asset_path | split: '|' | sort %}
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xlg-4 col-xlg-offset-4">
-            {% assign type = page.cover.src | split: '.' | last %}
-            {% if type == 'jpg' or type == 'jpeg' or type == 'png' or type == 'gif' %}
-            <img class="img-responsive col-xs-12" src="{{ page.cover.src | prepend: site.baseurl }}" alt="">
-            {% else %}
-            <video autoplay loop class="col-xs-12">
-            <source src="{{ page.cover.src | prepend: site.baseurl }}" type="video/{{ type }}">
-            </video>
+            {% for i in all_asset_path %}
+            {% if i contains 'cover' %}
+                {% assign type = i | split: '.' | last %}
+                {% if type == 'jpg' or type == 'jpeg' or type == 'png' or type == 'gif' %}
+                <img class="img-responsive col-xs-12" src="{{ i | prepend: site.baseurl }}" alt="">
+                {% else %}
+                <video autoplay loop muted class="col-xs-12">
+                <source src="{{ i | prepend: site.baseurl }}" type="video/{{ type }}">
+                </video>
+                {% endif %}
             {% endif %}
+            {% endfor %}
         </div>
     </div>
     <div class="row">
@@ -24,10 +39,12 @@ layout: default
     <div class="row">
         <div class="col-lg-12 col-fhd-8 col-fhd-offset-2">
             <div class="row">
-                {% for i in page.carousel %}
-                <div class="col-lg-12">
-                    <img class="img-responsive col-xs-12" style="padding-bottom:10px" src="{{ "/assets/img/project/carousel/" | prepend: site.baseurl }}{{ i }}" alt="">
-                </div>
+                {% for i in all_asset_path %}
+                {% if i contains 'image' %}
+                  <div class="col-lg-12">
+                      <img class="img-responsive col-xs-12" style="padding-bottom:10px" src="{{ i | prepend: site.baseurl }}" alt="">
+                  </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>

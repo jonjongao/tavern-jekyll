@@ -63,20 +63,20 @@ $(document).ready(function() {
     return value;
   }
 
-  $('.portfolio').find('.img-overlay').hover(showGif, showImg);
+  $('.portfolio').find('.img-overlay').hover(showHover, showNormal);
 
-  function showGif() {
-    if($(this).data('gif') != '') {
+  function showHover() {
+    if($(this).data('hover') != '') {
       $(this).css(
-        'background-image', 'url(' + $(this).data('gif') + ')'
+        'background-image', 'url(' + $(this).data('hover') + ')'
       );
     }
   }
 
-  function showImg() {
-    if($(this).data('gif') != '') {
+  function showNormal() {
+    if($(this).data('normal') != '') {
       $(this).css(
-        'background-image', 'url(' + $(this).data('img') + ')'
+        'background-image', 'url(' + $(this).data('normal') + ')'
       );
     }
   }

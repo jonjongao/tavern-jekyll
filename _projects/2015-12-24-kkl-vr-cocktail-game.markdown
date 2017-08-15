@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "KKL VR Cocktail Game"
-alt: 
+alt: VR cocktail game for event, Integration with LeapMotion, Make your cocktail with your both hand!
 date: 2015-12-24 12:00:00
 client: Kinmen Kaoliang Liquor Inc., ShinningPrecision
 
@@ -12,10 +12,5 @@ tags:
 - VirtualReality
 - Unity
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/taheQm73qck?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>

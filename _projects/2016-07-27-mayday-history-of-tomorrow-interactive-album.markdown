@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Mayday's History of Tomorrow Interactive Album"
-alt: Interactive album for Mayday(五月天) Bedtime Stories album, made in Adobe Flash
+alt: Interactive album for Mayday(五月天) History of Tomorrow album
 date:   2016-07-27 12:00:00
 client: B'in Music, ShinningPrecision
 website: http://www.books.com.tw/products/0020183063

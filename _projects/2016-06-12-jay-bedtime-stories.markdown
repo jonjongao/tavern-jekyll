@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Jay Chou's Bedtime Stories Interactive Album"
-alt: Interactive album for Jay Chou(周杰倫) Bedtime Stories album, made in Adobe Flash
+alt: Interactive album for Jay Chou(周杰倫) Bedtime Stories album
 date: 2016-06-12 12:00:00
 client: JVR Music, ShinningPrecision
 website: http://www.books.com.tw/products/0020183063

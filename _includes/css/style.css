@@ -604,3 +604,13 @@ a.anchor{
 #social a:hover {
 	background-color: {{ site.colors.primary }} !important;
 }
+
+.btn-primary {
+	background-color: {{ site.colors.link }};
+	border-color: {{ site.colors.link }};
+}
+
+.btn-primary:hover {
+	background-color: {{ site.colors.link_hover }};
+	border-color: {{ site.colors.link }};
+}

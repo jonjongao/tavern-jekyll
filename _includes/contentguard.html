@@ -3,10 +3,14 @@
         <li>
             <input id="contentguard" type="checkbox" checked data-toggle="toggle" data-filter-group="contentguard">
         </li>
+        {% assign count = 0 %}
+        {% for project in site.projects %}
+        {% if project.tags contains 'HIDE' %}
+        {% assign count = count | plus: 1 %}
+        {% endif %}
+        {% endfor %}
         <li>
-            <p>
-                Adult Content Guard
-            </p>
+            <p>Adult Content Guard, <small>{{ count }} projects hidden</small>.</p>
         </li>
     </ul>
 </div>

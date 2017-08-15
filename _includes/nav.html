@@ -1,3 +1,4 @@
+{% if site.navbar.enabled %}
 <div class="navbar navbar-default navbar-collapse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -9,7 +10,6 @@
       </button>
             <a class="navbar-brand" href="{{ " / "  | prepend: site.baseurl }}">{{ site.title }}</a>
         </div>
-        {% if site.navbar.enabled %}
         <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
                 <li {% if page.title=="Home" %}class="active" {% endif %}><a href="{{" / " | prepend: site.baseurl }}">HOME</a></li>
@@ -19,6 +19,6 @@
                 <li {% if page.title=="Contact" %}class="active" {% endif %}><a href="{{" /contact/ " | prepend: site.baseurl }}">CONTACT</a></li>
             </ul>
         </div>
-        {% endif %}
     </div>
 </div>
+{% endif %}

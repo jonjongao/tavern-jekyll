@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  "NutZmasher 20XX"
+alt: Push you friend out of arena!
 date: 2012-09-24 12:00:00
 client: "#GetOnlineLANParty2012"
 website: http://www.getonline-lan.net/2012/kilpailut
@@ -10,8 +11,6 @@ tags:
 - GameJam
 - Unity
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+My first Game Jam Invitation from friend Samuli
 
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+I worked on the Modeling and custom Shader for Ball

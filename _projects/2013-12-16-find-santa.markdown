@@ -1,18 +1,28 @@
 ---
 layout: project
 title:  "Find Santa"
-alt:
+alt: ONLY ONE PATH CAN LEAD YOU TO THE GIFT! You are a little girl trying to find Santa's legendary gift! 
 date: 2013-12-16 12:00:00
 client: "#LD28"
-website: http://ludumdare.com/compo/ludum-dare-28/?action=preview
+website: http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=24093
 
 tags:
 - Game
 - GameJam
 - Unity
+alts:
+- Room generator for this game
+- Door navigation
+- Testing 50x50 room
+-
+-
+-
+- Gift art draw by my friends
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+ONLY ONE PATH CAN LEAD YOU TO THE GIFT! You are a little girl trying to find Santa's legendary gift! 
 
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Every 30 sec you will get some trail like noise sound(randomly) to show Santa's direction, so is much easily to find out.
+
+During the game jam, I call out my friends help some Gift art, It's very interesting co-op with my friends, put their artwork into my game :D
+
+<a href="http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=24093" target="_blank"><button type="button" class="btn btn-theme">Play</button></a>

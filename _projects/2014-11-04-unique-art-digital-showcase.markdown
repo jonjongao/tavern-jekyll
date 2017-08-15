@@ -1,7 +1,7 @@
 ---
 layout: project
-title:  "Unique Art Transparent Display Digital Showcase"
-alt:
+title: "Unique Art Transparent Display Digital Showcase"
+alt: Digital showcase with transparent touch panel, And Arduino device I made within
 date: 2014-09-05 12:00:00
 client: Unique Art, New Vision
 
@@ -10,12 +10,10 @@ tags:
 - Arduino
 - Unity
 - PhysicalProduct
+alts:
+- Custom tool for interface
+- 
+- Introducing our product to Passionate college students :D
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gAvneOXDNp4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 Introduction video by my fomer company Shinning Precision, between 0:00 - 0:34 is Digital Showcase

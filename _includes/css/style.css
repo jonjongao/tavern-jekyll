@@ -31,14 +31,14 @@ body {
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 }
 
 p {
 	padding: 0;
 	margin-bottom: 12px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
@@ -231,10 +231,10 @@ a:focus {
 	background-image: url({{ site.header.image }});
 	background-repeat: no-repeat;
 	background-position: calc(50%) calc(50%);
-	background-size: 50%;
+	background-size: cover;
 	text-align: center;
 	height: 500px;
-	background-color: {{ site.header.color }};
+	background-color: {{ site.header.color | default: '#000000' }};
 }
 
 #headerwrap h3, h5 {
@@ -264,6 +264,14 @@ a:focus {
 	color: white;
 }
 
+#profile h1 {
+	color: white;
+}
+
+#profile h2 {
+	color: white;
+}
+
 #avatar {
 	margin-left: auto;
 	margin-right: auto;
@@ -279,7 +287,7 @@ a:focus {
         height: 100%;
         float: left;
         position: fixed;
-				background-size: 90%;
+				background-size: cover;
     }
 
     #contentwrap {

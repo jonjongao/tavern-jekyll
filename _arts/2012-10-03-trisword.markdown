@@ -1,20 +1,15 @@
 ---
 layout: project
-title:  "Trisword"
-date:   2012-10-03 12:00:00
-author: Jon Gao
-categories:
-- project
+title: "Trisword"
+alt: Character concept for ETeeski's contest, Specail force with catching big red armor
+date: 2012-10-03 12:00:00
+client: 
+website: http://rosa89n20.deviantart.com/art/Trisword-340080515
+
 img: /assets/img/art/trisword_thumbnail_300x300.jpg
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
 tags:
 - Art
 - Character
-client: 
-website: http://rosa89n20.deviantart.com/art/Trisword-340080515
 ---
 ####Trisword
 Game character concept. But I decided not to use it because game theme change to steampunk, so I took this artwork join ETeeski contest and win a prize.

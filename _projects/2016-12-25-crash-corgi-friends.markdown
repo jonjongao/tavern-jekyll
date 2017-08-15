@@ -4,10 +4,12 @@ title: "Crash Corgi Friends"
 client: "#CORGSMAS"
 alt: Play as Corgi collecting lots of Gift and yum yum yum!!!!
 date: 2016-12-25 12:00:00
+website: https://itch.io/jam/corgsmas
+
 tags:
 - Game
 - GameJam
-website: https://itch.io/jam/corgsmas
+- Unity
 ---
 Inspired by one of my favorite game: Crash Bandicoot! But instead of tomatoes, we play as Corgi collecting lots of Gift and Delicious Food!
 

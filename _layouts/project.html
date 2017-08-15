@@ -4,8 +4,7 @@ layout: default
 {% include wrap.html %}
 
 {% assign all_asset_path = '' %}
-{% assign name = page.url | split: '/' | last %}
-{% assign directory_url = 'assets/img/project/' | append: name | append: '/' | prepend: site.baseurl %}
+{% assign directory_url = 'assets/img' | append: page.url | prepend: site.baseurl %}
 {% for file in site.static_files %}
 {% if file.path contains directory_url %}
     {% assign asset = file.path | join: '|' | append: '|' %}
@@ -21,9 +20,9 @@ layout: default
             {% if i contains 'cover' %}
                 {% assign type = i | split: '.' | last %}
                 {% if type == 'jpg' or type == 'jpeg' or type == 'png' or type == 'gif' %}
-                <img class="img-responsive col-xs-12" style="max-height: 600px;" src="{{ i | prepend: site.baseurl }}" alt="">
+                <img class="img-responsive" style="max-height: 600px; margin: 0 auto;" src="{{ i | prepend: site.baseurl }}" alt="">
                 {% else %}
-                <video autoplay loop muted class="col-xs-12" style="max-height: 600px;">
+                <video autoplay loop muted class="col-xs-12" style="max-height: 600px; margin: 0 auto;">
                 <source src="{{ i | prepend: site.baseurl }}" type="video/{{ type }}">
                 </video>
                 {% endif %}
@@ -39,14 +38,10 @@ layout: default
     <div class="row">
         <div class="col-lg-12 col-fhd-8 col-fhd-offset-2">
             <div class="row">
+                {% assign counter = 0 %}
                 {% for i in all_asset_path %}
                 {% if i contains 'image' %}
-                    {% assign type = i | split: '.' | last %}
-                    {% if type == 'jpg' or type == 'jpeg' or type == 'png' or type == 'gif' %}
-                    <div class="col-lg-12">
-                        <img class="img-responsive col-xs-12" style="padding-bottom:10px" src="{{ i | prepend: site.baseurl }}" alt="">
-                    </div>
-                    {% else %}
+
                     {% assign img_url = i | split: '_' | last | split: '.' | first | split: 'x' %}
                     {% assign img_size = '' %}
 
@@ -61,10 +56,23 @@ layout: default
                     {% endfor %}
                     {% assign img_size = img_size | split: '|' %}
 
-                    <video autoplay loop muted class="col-xs-12" style="max-width: {{ img_size | first }}; max-height: {{ img_size | last }}; padding-bottom:10px;">
+                    {% assign type = i | split: '.' | last %}
+
+                    {% if type == 'jpg' or type == 'jpeg' or type == 'png' or type == 'gif' %}
+                    <div class="col-lg-12">
+                        <img src="{{ i | prepend: site.baseurl }}" class="img-responsive" style="max-width: {{ img_size | first }}; max-height: {{ img_size | last }}; padding-top: 10px; margin: 0 auto;" alt="{{ page.alts[counter] | default: "" }}">
+                    </div>
+                    {% else %}
+                    <video autoplay loop muted class="col-xs-12" style="max-width: {{ img_size | first }}; max-height: {{ img_size | last }}; padding-top: 10px;">
                     <source src="{{ i | prepend: site.baseurl }}" type="video/{{ type }}">
                     </video>
                     {% endif %}
+
+                    {% unless page.alts[counter] == "" %}
+                    <div class="col-xs-12 text-center"><p>{{ page.alts[counter] }}</p></div>
+                    {% endunless %}
+
+                    {% assign counter = counter | plus: 1 %}
                 {% endif %}
                 {% endfor %}
             </div>

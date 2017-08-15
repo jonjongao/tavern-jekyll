@@ -1,21 +1,14 @@
 ---
 layout: project
 title:  "NutZmasher 20XX"
-date:   2012-09-24 12:00:00
-author: Jon Gao
-categories:
-- project
-img: /assets/img/project/nutzmasher-20xx_thumbnail_600x225.png
-filter: none
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+date: 2012-09-24 12:00:00
+client: "#GetOnlineLANParty2012"
+website: http://www.getonline-lan.net/2012/kilpailut
+
 tags:
 - Game
 - GameJam
-client: GetOnline LAN Party 2012
-website: http://www.getonline-lan.net/2012/kilpailut
+- Unity
 ---
 ####YOUR PROJECT NAME
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

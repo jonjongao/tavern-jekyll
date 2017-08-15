@@ -1,21 +1,16 @@
 ---
 layout: project
-title:  "Find Santa Sprites"
-date:   2013-12-16 12:00:00
-author: Jon Gao
-categories:
-- project
+title: "Find Santa Sprites#2"
+alt: Game asset for Find Santa, Draw in Photoshop
+date: 2013-12-16 12:00:00
+client: "#LD28, Find Santa"
+website: http://rosa89n20.tumblr.com/post/71274885071/sprite-animation-of-find-santa-d-you-can-play
+
 img: /assets/img/art/find-santa-2_gif.gif
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
 tags:
 - Art
 - GameAsset
-- Sprite
-client: 
-website: http://rosa89n20.tumblr.com/post/71274885071/sprite-animation-of-find-santa-d-you-can-play
+- PixelArt
 ---
 ####YOUR PROJECT NAME
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

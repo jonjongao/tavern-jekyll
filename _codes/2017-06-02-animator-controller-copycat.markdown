@@ -5,7 +5,8 @@ date:   2017-06-02 12:00:00
 author: Jon Gao
 categories:
 - project
-img: http://i.imgur.com/Kq1eUln.jpg
+thumbnail:
+- http://i.imgur.com/Kq1eUln.jpg
 carousel:
 - single01.jpg
 - single02.jpg

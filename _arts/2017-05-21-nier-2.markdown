@@ -1,23 +1,19 @@
 ---
 layout: project
-title:  "Nier Doujin Game Animation"
-date:   2017-5-17 12:00:00
-author: Jon Gao
-categories:
-- project
+title:  "Nier Doujin Game Animation#2"
+alt: Game asset for Nier doujin game, Draw in Photoshop, Animate made with Spine
+date: 2017-5-17 12:00:00
+client: Nier Doujin Game(In development)
+website: http://rosa89n20.tumblr.com/post/160833841899/deadly-machine-punch
+background-color: "#333333"
+
 img: /assets/img/art/nier-2_gif.gif
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+
 tags:
 - Art
 - GameAsset
 - Spine
 - Animation
-client: 
-website: http://rosa89n20.tumblr.com/post/160833841899/deadly-machine-punch
-background-color: "#333333"
 ---
 ####YOUR PROJECT NAME
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

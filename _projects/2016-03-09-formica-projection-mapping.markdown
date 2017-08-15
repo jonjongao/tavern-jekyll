@@ -1,23 +1,21 @@
 ---
 layout: project
-title:  "Formica Projection Mapping Show"
-date:   2016-03-09 12:00:00
-author: Jon Gao
-categories:
-- project
-img: /assets/img/project/formica-projection-mapping_thumbnail_600x225.gif
-filter: none
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+title: "Formica Projection Mapping Show"
+alt: Projection mapping show for Formica new product launch
+date: 2016-03-09 12:00:00
+client: Formica, ShinningPrecision
+
 tags:
 - ProjectionMapping
-client:
-website:
+alts:
+- 
+- We testing scene in church
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Our first commission projection case has decent challenge already
 
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Dozens of masking video gently lay on objects, And play together as one symphony.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EsuPvjv0KIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+Watch whole show and see me setting scene!
+
+Timelapse record by my former company Shinning Precision

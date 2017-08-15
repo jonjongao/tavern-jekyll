@@ -1,0 +1,19 @@
+---
+layout: project
+title: "CWT43 Fanart Works - The Family Business"
+alt: I think he wants us to pick up where he left off. right?
+date: 2016-09-03 12:00:00
+client: "#CWT43"
+website: https://shopee.tw/%E6%8E%A2%E9%9A%AA%E6%B4%BB%E5%AF%B6-%E7%90%85%E7%90%8A%E6%A6%9C-%E8%B6%85%E8%87%AA%E7%84%B6%E6%AA%94%E6%A1%88-%E6%82%A0%E9%81%8A%E5%8D%A1%E8%B2%BC-i.3699403.316226876
+
+img: /assets/img/art/cwt43-fanart_300x300.jpg
+
+tags:
+- Art
+- FanArt
+---
+####YOUR PROJECT NAME
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+####Our Proposal
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

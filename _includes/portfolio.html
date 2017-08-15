@@ -6,8 +6,7 @@
             {% for project in site.projects reversed limit:include.limit %}
 
             {% assign thumbnail_path = '' %}
-            {% assign name = project.url | split: '/' | last %}
-            {% assign directory_url = 'assets/img/project/' | append: name | append: '/' | prepend: site.baseurl %}
+            {% assign directory_url = 'assets/img' | append: project.url | prepend: site.baseurl %}
             {% for file in site.static_files %}
             {% if file.path contains directory_url %}
             {% if file.path contains 'thumbnail' %}

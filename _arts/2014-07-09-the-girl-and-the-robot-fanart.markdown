@@ -1,21 +1,16 @@
 ---
 layout: project
-title:  "The Girl And The Robot FanArt"
-date:   2014-07-09 12:00:00
-author: Jon Gao
-categories:
-- project
+title: "The Girl And The Robot FanArt"
+alt: Artwork for The Girl And The Robot(Game) Fanart contest
+date: 2014-07-09 12:00:00
+client: 
+website: http://rosa89n20.deviantart.com/art/The-girl-and-the-robot-466881045
+
 img: /assets/img/art/the-girl-and-the-robot-fanart_thumbnail_300x300.jpg
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
 tags:
 - Art
 - Character
 - FanArt
-client: 
-website: http://rosa89n20.deviantart.com/art/The-girl-and-the-robot-466881045
 ---
 ####YOUR PROJECT NAME
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

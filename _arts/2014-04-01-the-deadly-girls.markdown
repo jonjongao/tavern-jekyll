@@ -1,21 +1,16 @@
 ---
 layout: project
-title:  "The Walking Dead FanArt: The Deadly Girls"
-date:   2014-04-01 12:00:00
-author: Jon Gao
-categories:
-- project
+title: "The Walking Dead FanArt: The Deadly Girls"
+alt: In memory of best team in The Walking Dead TV Series
+date: 2014-04-01 12:00:00
+client: 
+website: http://rosa89n20.deviantart.com/art/The-Deadly-Girls-Mika-and-Lizzie-444733644
+
 img: /assets/img/art/the-deadly-girls_thumbnail_300x300.jpg
-carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
 tags:
 - Art
 - Character
 - FanArt
-client: 
-website: http://rosa89n20.deviantart.com/art/The-Deadly-Girls-Mika-and-Lizzie-444733644
 ---
 ####YOUR PROJECT NAME
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

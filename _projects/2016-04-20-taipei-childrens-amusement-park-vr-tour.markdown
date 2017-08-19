@@ -5,9 +5,13 @@ alt: VR Tour App made with Unity, avaliable for both PC and Mobile VR headset
 date: 2016-04-20 12:00:00
 client: New Vision, ShinningPrecision
 website: http://shinning360.com/
+genre: vr
+platform:
+- android
+- windows
 
 tags:
-- VirtualReality
+- VR
 - Unity
 - 360-DegreeVideo
 alts:

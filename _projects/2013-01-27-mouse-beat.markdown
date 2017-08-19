@@ -5,6 +5,9 @@ alt: <small>Player one plays as a cruel kid that tries to give an heart attack t
 date: 2013-01-27 12:00:00
 client: "#GlobalGameJam2013"
 website: http://2013.globalgamejam.org/2013/mouse-beat
+genre: action
+platform:
+- windows
 
 tags:
 - Game

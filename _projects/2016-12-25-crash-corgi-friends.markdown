@@ -5,6 +5,9 @@ client: "#CORGSMAS"
 alt: Play as Corgi collecting lots of Gift and yum yum yum!!!!
 date: 2016-12-25 12:00:00
 website: https://itch.io/jam/corgsmas
+genre: action
+platform:
+- windows
 
 tags:
 - Game

@@ -4,9 +4,14 @@ title: "Nu Skin Presentation AR App"
 alt:
 date: 2016-01-16 12:00:00
 client: NU Skin, ShinningPrecision
+genre: ar
+platform:
+- ios
+- android
+- windows
 
 tags:
-- AugmentedReality
+- AR
 - Unity
 alts:
 - Debug mode and screenshot function testing

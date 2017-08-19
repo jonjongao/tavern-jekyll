@@ -24,7 +24,9 @@ $(document).ready(function() {
   var $container = $('.portfolio');
   var filters = {};
 
+  {% if site.content_guard %}
   hideHiddenItems();
+  {% endif %}
 
   $('#contentguard').change(function() {
     if($(this).prop('checked') == true) {
@@ -113,6 +115,9 @@ $(document).ready(function() {
 		function getColumnNumber() {
 			var winWidth = $('#portfoliowrap').width(),
 			columnNumber = 1;
+
+      console.log(winWidth);
+
 
 			if (winWidth > {{ site.portfolio.img_width }} * 4 + {{ site.portfolio.grid_space }} * 8) {
 				columnNumber = 4;

@@ -5,6 +5,10 @@ alt: Interactive album for Jay Chou(周杰倫) Bedtime Stories album
 date: 2016-06-12 12:00:00
 client: JVR Music, ShinningPrecision
 website: http://www.books.com.tw/products/0020183063
+genre: app
+platform:
+- mac
+- windows
 
 tags:
 - Flash

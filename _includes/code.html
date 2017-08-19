@@ -5,6 +5,9 @@
         <div class="recentitems portfolio">
             {% for project in site.codes reversed limit:include.limit %}
                 <div class="portfolio-item graphic-design ALWAYS SAFE">
+
+                {% if site.hoverEx %}
+
                     <div class="he-wrap tpl6">
                         {% unless project.website == "" %}
                         <a href="{{ project.website }}" target="_blank">
@@ -22,6 +25,57 @@
                             </div>
                         </a>
                     </div>
+
+                    {% else %}
+
+                    <div class="project-panel">
+                      {% unless project.website == "" %}
+                      <a href="{{ project.website }}" target="_blank">
+                      {% else %}
+                      <a href="{{ project.url | prepend: site.baseurl }}">
+                      {% endunless %}
+                            <div class="img-overlay" data-normal="{{ project.thumbnail | first }}" data-hover="{{ project.thumbnail | last }}" style="background-image: url('{{ project.thumbnail | first }}'); background-color: {{ bg_color | default: '#5a5a5a' }}" alt="{{ project.alt }}">
+                                <div>
+                                    <div class="project-content project_description bg-gradient-4-6">
+                                        <h3>{{ project.title }}</h3>
+
+                                        <div class="project-subtitle">
+                                            <div style="float: left;">
+                                                <p>{{ project.genre }}</p>
+                                            </div>
+                                        <div style="float: right;">
+                                            {% for platform in project.platform %}
+                                            {% case platform %}
+                                            {% when 'android' %}
+                                            <i class="fa fa-android" aria-hidden="true"></i>
+                                            {% when 'apple' or 'ios' or 'mac' %}
+                                            <i class="fa fa-apple" aria-hidden="true"></i>
+                                            {% when 'windows' or 'pc' %}
+                                            <i class="fa fa-windows" aria-hidden="true"></i>
+                                            {% when 'browser' or 'web' %}
+                                            <i class="fa fa-html5" aria-hidden="true"></i>
+                                            {% endcase %}
+                                            {% endfor %}
+                                        </div>
+                                      </div>
+
+                                      {% assign tags = project.tags | join: '|' | append: '|' | remove: 'HIDE|' | split: '|' %}
+                                      <div class="project-tags">
+                                          <div class="tags button-group-project" data-filter-group="tags">
+                                              {% for i in tags limit: 3 %}
+                                              <button class="btn btn-project" data-filter=".{{ i }}, .ALWAYS">{{ i }}</button>
+                                              {% endfor %}
+                                          </div>
+                                      </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    {% endif %}
+
                 </div>
                 {% endfor %}
             </div>

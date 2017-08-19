@@ -5,6 +5,10 @@ alt: Interactive album for Mayday(五月天) History of Tomorrow album
 date:   2016-07-27 12:00:00
 client: B'in Music, ShinningPrecision
 website: http://www.books.com.tw/products/0020183063
+genre: app
+platform:
+- mac
+- windows
 
 tags:
 - Flash

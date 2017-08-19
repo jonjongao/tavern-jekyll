@@ -1,18 +1,19 @@
-### GENERAL SETTINGS ###
-
 # Site settings
 title: Jon Gao
 author: Jon Gao
 description: "Game Developer, 2D Artist, Program Ranger. I love making video game, helping people, facing challenge and seeking solution"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://yourdomain.com"
+url: "https://rosa89n20.github.io"
+
+# Component toggle
 header:
   color: "#000000"
   image: /assets/img/header-background.jpg
 navbar:
   enabled: false
-
+content_guard: false
+hoverEx: false
 
 # Build settings
 markdown: kramdown
@@ -22,11 +23,13 @@ excerpt_separator: <!--more--> #use this in posts to define how long the excerpt
 colors:  #in hex code if not noted else
   primary: "#ce681e" #"#F70031"
   primary_rgb: "206,104,30" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
-  secondary: "#313131" #"#33004D"
+  secondary: "#434343" #"#33004D"
+  secondary_rgb: "67,67,67"
   link: "#fd9b14"
   link_hover: "#ce681e"
   footer_heading: "#ffffff"
   footer_content: "#ffffff"
+  contentBackground: "#313131"
 
 # Making projects separate from posts
 collections:
@@ -42,8 +45,6 @@ collections:
   codes:
     output: true
     permalink: /codes/:title/
-
-### CONTACT SETTINGS ###
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
@@ -89,7 +90,8 @@ about:
    All these make me not fear the unknown but embrace it.<br>
    That's why I have so many project from different area, and I respect all of them, they're the witness of my growing, and it'll never stop.<br>
    I also managing a group BATTLEHAM which is creative bunch help each other, freelance together.<br>
-   I believe freelancing is attitude, to create mobility, helping people, keep yourself sharp all the time."
+   I believe freelancing is attitude, to create mobility, helping people, keep yourself sharp all the time.<br>
+   Contact me via: rosa89n20@gmail.com"
   experience:
     - job: Programer
       name: CSoft Taiwan
@@ -119,6 +121,7 @@ portfolio:
   img_height: 300
   grid_space: 10
 
+# Default value for post across all
 defaults:
   -
     scope:
@@ -129,6 +132,8 @@ defaults:
       author: Jon Gao
       categories: ["project"]
       website: ""
+      genre: ""
+      platform: ""
   -
     scope:
       path: "_codes"

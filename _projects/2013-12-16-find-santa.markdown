@@ -5,6 +5,10 @@ alt: ONLY ONE PATH CAN LEAD YOU TO THE GIFT! You are a little girl trying to fin
 date: 2013-12-16 12:00:00
 client: "#LD28"
 website: http://ludumdare.com/compo/ludum-dare-28/?action=preview&uid=24093
+genre: "survive, roguelike"
+platform:
+- windows
+- browser
 
 tags:
 - Game

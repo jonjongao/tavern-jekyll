@@ -2,7 +2,10 @@
 layout: project
 title: "Cui Cui"
 alt: Little Fox on the journey of restore family legacy manor by stamping leaf and collecting seed.
-date:   2017-05-09 12:00:00
+date: 2017-05-09 12:00:00
+genre: action
+platform:
+- android
 
 tags:
 - Game

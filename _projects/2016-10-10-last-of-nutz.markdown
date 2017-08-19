@@ -5,6 +5,10 @@ client: "#GBJAM5"
 alt: Little squirrel trying to survive in dangerous forest. Eat nuts to gain stamina, find Nest to gain addition life.
 date: 2016-10-10 12:00:00
 website: https://itch.io/jam/gbjam-5
+genre: action
+platform:
+- windows
+- browser
 
 tags:
 - Game

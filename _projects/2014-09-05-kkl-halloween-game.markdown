@@ -5,6 +5,9 @@ alt: Interactive game for Halloween event, you can play with both Mouse or LeapM
 date: 2014-09-05 12:00:00
 client: Kinmen Kaoliang Liquor Inc., ShinningPrecision
 website:
+genre: action
+platform:
+- windows
 
 tags:
 - Game

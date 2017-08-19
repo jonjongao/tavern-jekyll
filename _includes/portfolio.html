@@ -22,19 +22,72 @@
             {% else %}
             <div class="portfolio-item graphic-design {{ project.tags | join: ' ' | append: ' SAFE' }}">
             {% endif %}
-                <div class="he-wrap tpl6">
-                    <a href="{{ project.url | prepend: site.baseurl }}">
-                        <div class="img-overlay" data-normal="{{ thumbnail_path | first }}" data-hover="{{ thumbnail_path | last }}" style="background-image: url('{{ thumbnail_path | first }}')" alt="{{ project.alt }}">
-                            <div class="he-view">
-                                <div class="bg a0" data-animate="fadeIn">
-                                    <h3 class="a1" data-animate="flipInUp">{{ project.title }}</h3>
-                                    <p class="a1" data-animate="flipInUp"><small>{{ project.client }}</small></p>
-                                    <p class="a1" data-animate="flipInUp">{{ project.alt }}</p>
-                                </div>
+
+            {% if site.hoverEx %}
+
+            <div class="he-wrap tpl6">
+                <a href="{{ project.url | prepend: site.baseurl }}">
+                    <div class="img-overlay" data-normal="{{ thumbnail_path | first }}" data-hover="{{ thumbnail_path | last }}" style="background-image: url('{{ thumbnail_path | first }}')" alt="{{ project.alt }}">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="flipInUp">{{ project.title }}</h3>
+
+
+
+                                <p class="a1" data-animate="flipInUp"><small>{{ project.client }}</small></p>
+                                <p class="a1" data-animate="flipInUp">{{ project.alt }}</p>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
+
+            {% else %}
+
+            <div class="project-panel">
+                <a href="{{ project.url | prepend: site.baseurl }}">
+                    <div class="img-overlay" data-normal="{{ thumbnail_path | first }}" data-hover="{{ thumbnail_path | last }}" style="background-image: url('{{ thumbnail_path | first }}')" alt="{{ project.alt }}">
+                        <div>
+                            <div class="project-content project_description bg-gradient-4-6">
+                                <h3>{{ project.title }}</h3>
+
+                                <div class="project-subtitle">
+                                    <div style="float: left;">
+                                        <p>{{ project.genre }}</p>
+                                    </div>
+                                <div style="float: right;">
+                                    {% for platform in project.platform %}
+                                    {% case platform %}
+                                    {% when 'android' %}
+                                    <i class="fa fa-android" aria-hidden="true"></i>
+                                    {% when 'apple' or 'ios' or 'mac' %}
+                                    <i class="fa fa-apple" aria-hidden="true"></i>
+                                    {% when 'windows' or 'pc' %}
+                                    <i class="fa fa-windows" aria-hidden="true"></i>
+                                    {% when 'browser' or 'web' %}
+                                    <i class="fa fa-html5" aria-hidden="true"></i>
+                                    {% endcase %}
+                                    {% endfor %}
+                                </div>
+                              </div>
+
+                              {% assign tags = project.tags | join: '|' | append: '|' | remove: 'HIDE|' | split: '|' %}
+                              <div class="project-tags">
+                                  <div class="tags button-group-project" data-filter-group="tags">
+                                      {% for i in tags limit: 3 %}
+                                      <button class="btn btn-project" data-filter=".{{ i }}, .ALWAYS">{{ i }}</button>
+                                      {% endfor %}
+                                  </div>
+                              </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            {% endif %}
+
             </div>
             {% endfor %}
             </div>

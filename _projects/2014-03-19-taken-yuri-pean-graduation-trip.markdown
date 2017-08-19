@@ -5,6 +5,9 @@ alt: Lesbian high schoolers Yuko and Alice took a senior trip to Europe
 date: 2014-03-19 12:00:00
 client: Tenson3D
 website: http://www.dlsite.com/maniax/work/=/product_id/RJ131642.html
+genre: "beat 'em up, adult content"
+platform:
+- windows
 
 tags:
 - HIDE

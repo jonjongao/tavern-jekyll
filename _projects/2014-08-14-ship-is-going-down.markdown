@@ -5,6 +5,9 @@ alt: A ship full of demon is closing, you are the last hope of living soul. Kill
 date: 2014-08-14 12:00:00
 client: "#GBJAM3"
 website: http://jams.gamejolt.io/gbjam3/
+genre: "action, roguelike"
+platform:
+- windows
 
 tags:
 - Game

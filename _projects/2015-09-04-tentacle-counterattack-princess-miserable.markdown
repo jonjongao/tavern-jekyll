@@ -5,6 +5,9 @@ alt: Tentacles were seizing young girls across the land. A war of shojo vs. shok
 date: 2015-09-04 12:00:00
 client: Tenson3D
 website: http://www.dlsite.com/maniax/work/=/product_id/RJ163164
+genre: "arpg, adult content"
+platform:
+- windows
 
 tags:
 - HIDE

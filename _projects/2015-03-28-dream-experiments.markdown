@@ -5,6 +5,9 @@ alt: One day, I dream about the perfect idol, Mik*to, and I start to run after h
 date: 2015-03-28 12:00:00
 client: Tenson3D
 website: http://www.dlsite.com/maniax/work/=/product_id/RJ152943.html
+genre: "arpg, adult content"
+platform:
+- windows
 
 tags:
 - HIDE

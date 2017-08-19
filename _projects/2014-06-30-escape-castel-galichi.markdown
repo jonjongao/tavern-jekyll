@@ -5,12 +5,15 @@ alt: One day you pick up a game cartridge on road, than you decide to try it.
 date: 2014-06-30 12:00:00
 client: "#GlitchJam"
 website: http://jams.gamejolt.io/glitchjam
+genre: "fps, roguelike, vr"
+platform:
+- windows
 
 tags:
 - Game
 - GameJam
 - Unity
-- VirtualReality
+- VR
 alts:
 
 ---

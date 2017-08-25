@@ -19,6 +19,26 @@
 </script>
 {% endif %}
 <script>
+// Preload all gif
+$(document).ready(function() {
+  var $container = $('.preload-gif');
+  var gifs = new Array();
+
+  {% assign directory_url = 'assets/img' | prepend: site.baseurl %}
+  {% for file in site.static_files %}
+  {% if file.path contains directory_url %}
+      {% assign type = file.path | split: '/' | last | split: '.' | last %}
+      {% if type == "gif" %}
+      gifs.push('url({{ file.path }}) no-repeat -9999px -9999px');
+      {% endif %}
+  {% endif %}
+  {% endfor %}
+
+  $container.css(
+    'background', gifs
+  );
+
+});
 // Initial Isotope filters and Portfolio item hover effect
 $(document).ready(function() {
   var $container = $('.portfolio');
@@ -117,7 +137,6 @@ $(document).ready(function() {
 			columnNumber = 1;
 
       console.log(winWidth);
-
 
 			if (winWidth > {{ site.portfolio.img_width }} * 4 + {{ site.portfolio.grid_space }} * 8) {
 				columnNumber = 4;

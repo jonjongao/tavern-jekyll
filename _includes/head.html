@@ -23,6 +23,16 @@
     <!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+    {% assign directory_url = 'assets/img' | prepend: site.baseurl %}
+    {% for file in site.static_files %}
+    {% if file.path contains directory_url and file.path contains "thumbnail" %}
+        {% assign type = file.path | split: '/' | last | split: '.' | last %}
+        {% if type == "gif" or type == "jpg" or type == "jpeg" or type == "png" %}
+        <link rel="prefetch" href="{{ file.path | prepend: site.baseurl }}">
+        {% endif %}
+    {% endif %}
+    {% endfor %}
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 

@@ -18,9 +18,9 @@
             {% assign thumbnail_path = thumbnail_path | split: '|' | sort %}
 
             {% if project.tags contains 'HIDE' %}
-            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' }}">
+            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' }}" style="width: {{ site.portfolio.img_width }}px; height: {{ site.portfolio.img_height }}px;">
             {% else %}
-            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' | append: ' SAFE' }}">
+            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' | append: ' SAFE' }}" style="width: {{ site.portfolio.img_width }}px; height: {{ site.portfolio.img_height }}px;">
             {% endif %}
 
             {% if site.hoverEx %}

@@ -14,11 +14,11 @@ tags:
 - GameJam
 - Unity
 ---
+Work on some Modeling, Particle Effect, and code for Game Effect
+
 My very first Game Jam
 
 Work with my friends Samuli, Chris, Arvid
-
-I worked on some Modeling, Particle Effect, and some code for Game Effect
 
 <a href="http://2013.globalgamejam.org/2013/mouse-beat" target="_blank"><button type="button" class="btn btn-theme">Play</button></a>
 

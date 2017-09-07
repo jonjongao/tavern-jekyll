@@ -1,14 +1,11 @@
-{% comment %}
-Get all relative static file in target directory
-and return as 'all_asset_path' value
-{% endcomment %}
+{% assign directory = include.directory | default: 'img' %}
+{% assign find = include.find | default: '' %}
+{% assign directory_url = 'assets/' | append: directory | append: include.url | prepend: site.baseurl %}
 
-{% assign all_asset_path = '' %}
-{% assign directory_url = 'assets/' | append: include.directory | append: include.url | prepend: site.baseurl %}
 {% for file in site.static_files %}
 {% if file.path contains directory_url %}
-    {% assign asset = file.path | join: '|' | append: '|' %}
-    {% assign all_asset_path = all_asset_path | append: asset %}
+{% if file.path contains find %}
+{{ file.path }}|
+{% endif %}
 {% endif %}
 {% endfor %}
-{% assign all_asset_path = all_asset_path | split: '|' | sort %}

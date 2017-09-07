@@ -14,6 +14,8 @@ tags:
 - Flash
 - PhysicalProduct
 ---
+Work on Program
+
 3rd interactive album I made in same framework.
 
 Huge different is this album ship with Lossless Compression format, In order to play that high bitrate, I made bunch of tweak to audio reader library, also extra memory managing to stream lossless file.

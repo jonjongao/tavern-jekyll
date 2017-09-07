@@ -11,11 +11,7 @@ alts:
 - 
 - We testing scene in church
 ---
-Our first commission projection case has decent challenge already
-
-Dozens of masking video gently lay on objects, And play together as one symphony.
+Work on Solution, Design
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EsuPvjv0KIU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 Watch whole show and see me setting scene!
-
-Timelapse record by my former company Shinning Precision

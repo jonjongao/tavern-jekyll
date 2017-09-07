@@ -15,5 +15,8 @@ alts:
 - 
 - Introducing our product to Passionate college students :D
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gAvneOXDNp4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-Introduction video by my fomer company Shinning Precision, between 0:00 - 0:34 is Digital Showcase
+Work on Program, Design, Hareware
+
+A transparent display showcase we almost made from scratch(Except display itself), we add a lot of extra LED  to get better visual effort.
+
+2 arduino servo device for interactive with product. 

@@ -19,8 +19,6 @@ tags:
 client: 
 website: 
 ---
-####YOUR PROJECT NAME
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+VR sequence framework I made for [Taipei Childrens Amusement Park VR Tour](/projects/taipei-childrens-amusement-park-vr-tour/) project
 
-####Our Proposal
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Custom editor let you ease to access all sequence, debugging and tweak setting and options.

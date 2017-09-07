@@ -1,8 +1,8 @@
 # Site settings
 title: Jon Gao
 author: Jon Gao
-description: "Game Developer, 2D Artist, Program Ranger. I love making video game, helping people, facing challenge and seeking solution"
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
+description: "Game Developer, 2D Artist, Program Ranger. I love making video game, art and helping people, dreaming to become tavern master one day."
+analytics: UA-46567973-4 #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "https://rosa89n20.github.io"
 
@@ -49,34 +49,34 @@ collections:
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
   - title: EMail
-    icon: /assets/svg/email-sign.svg
+    icon: /assets/svg/email-logo.svg
     url: mailto:rosa89n20@gmail.com
   - title: Twitter
-    icon: /assets/svg/twitter-sign.svg
+    icon: /assets/svg/twitter-logo.svg
     url: https://twitter.com/jongaodev
   - title: Tumblr
     icon: /assets/svg/tumblr-logo.svg
     url: https://rosa89n20.tumblr.com
   - title: Github
-    icon: /assets/svg/github-sign.svg
+    icon: /assets/svg/github-logo.svg
     url: https://github.com/rosa89n20
   - title: GameJolt
-    icon: /assets/svg/gamejolt-sign.svg
+    icon: /assets/svg/gamejolt-logo.svg
     url: http://gamejolt.com/@rosa89n20
   - title: Itch.io
-    icon: /assets/svg/itchio-sign.svg
+    icon: /assets/svg/itchio-logo.svg
     url: https://rosa89n20.itch.io/
   - title: DeviantArt
-    icon: /assets/svg/deviantart-sign.svg
+    icon: /assets/svg/deviantart-logo.svg
     url: http://rosa89n20.deviantart.com/
   - title: LinkedIn
-    icon: /assets/svg/linkedin-sign.svg
+    icon: /assets/svg/linkedin-logo.svg
     url: https://www.linkedin.com/in/rosa89n20/
   - title: Steam
-    icon: /assets/svg/steam-sign.svg
+    icon: /assets/svg/steam-logo.svg
     url: http://steamcommunity.com/id/rosa89n20
   - title: ArtStation
-    icon: /assets/svg/artstation-sign.svg
+    icon: /assets/svg/artstation-logo.svg
     url: https://www.artstation.com/artist/rosa89n20
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
@@ -86,11 +86,16 @@ about:
   description: "Hello! I'm Jon, aka Rosa on social media.<br>
    Game developer, Illustrator and Hobby Maker in Taipei, Taiwan.<br>
    Graduated from Design school, Self-taught program since college.<br>
-   I always love experiment new technology, Solution thinking help me get through a lots of challenge, Design mindset help me crafted better.<br>
+   I love play Game Jam with friends, Share dev log on social media, Watch Youtuber play my game and suffering!<br>
+   I've big passion for programing as well as design, I like programing is because it constantly something new to learn and solve, I'm fast learner when it comes to tech and software.<br>
+   I always love learn new technology, Solution thinking help me get through a lots of challenge, Design mindset help me crafted better.<br>
    All these make me not fear the unknown but embrace it.<br>
    That's why I have so many project from different area, and I respect all of them, they're the witness of my growing, and it'll never stop.<br>
    I also managing a group BATTLEHAM which is creative bunch help each other, freelance together.<br>
    I believe freelancing is attitude, to create mobility, helping people, keep yourself sharp all the time.<br>
+   <br>
+   When I'm not working I like adventure in alley, Pathfinding wothout Google Map. Reading, Drawing and experiment new code.<br>
+   <br>
    Contact me via: rosa89n20@gmail.com"
   experience:
     - job: Programer
@@ -115,6 +120,13 @@ about:
     - Hack and Slash, Couch-Multiplayer, Atmosphere, Blood, Lively game environment
     - Medieval Fantasy, Serious Sci-fi, Story Geek, Retro, Vaporwave
     - Love challenge, Solving problem, Experiment, Make random story
+  carousel:
+    - img: /assets/img/about/carousel/image-1.jpg
+      alt: "Try to integration Scrum to our team"
+    - img: /assets/img/about/carousel/image-2.jpg
+      alt: "Share thought in school"
+    - img: /assets/img/about/carousel/image-3.jpg
+      alt: "Play board game with friends"
 
 portfolio:
   img_width: 300
@@ -134,6 +146,7 @@ defaults:
       website: ""
       genre: ""
       platform: ""
+      priority: 0
   -
     scope:
       path: "_codes"

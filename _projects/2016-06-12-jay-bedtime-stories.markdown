@@ -20,6 +20,8 @@ alts:
 - Book fliping effect
 - Book flip transition
 ---
+Work on Program
+
 Challenge of this project is it contain lots of video, so lots of buffering need to deal with.
 
 Because action of book fliping and video straming are so tight, even little bit of frame flacker will seem very obvious.

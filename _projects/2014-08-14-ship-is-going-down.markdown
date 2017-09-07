@@ -13,6 +13,8 @@ tags:
 - Game
 - GameJam
 - Unity
+
+priority: 6
 ---
 A ship full of demon is closing, you are the last hope of living soul. Kill the demon, sink the ship, and get out alive if possible.
 

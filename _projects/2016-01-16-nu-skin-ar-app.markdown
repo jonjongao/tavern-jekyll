@@ -19,3 +19,6 @@ alts:
 - Landing page I made for event
 - Show stage
 ---
+Work on Program, Design, App Publishing, Landing Page
+
+AR App for Nu Skin new product lunch event, people scan the DM they got in entrance to download. App will play product operate animation, and introduction for new tech of product.

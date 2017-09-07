@@ -19,6 +19,8 @@ alts:
 - Art by Oracle
 - Art by Cyankuri and All Coloring work
 ---
+Work on Sketch, Project Management
+
 Tarot card design with [Chinese Zodiac](https://en.wikipedia.org/wiki/Sexagenary_cycle) theme(天干地支).
 
 Because this case has to finish in short amount of time, So I decided to get some help.

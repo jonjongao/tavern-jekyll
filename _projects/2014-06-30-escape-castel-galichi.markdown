@@ -16,6 +16,7 @@ tags:
 - VR
 alts:
 
+priority: 9
 ---
 Try to hit old Wolfenstein style, and it work out pretty good!
 

@@ -15,3 +15,4 @@ alts:
 - Arduino and other module
 - Showcase at restaurant
 ---
+Work on Program, Hardware, Design

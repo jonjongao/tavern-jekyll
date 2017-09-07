@@ -20,6 +20,8 @@ alts:
 - Tileset
 - Working in progress
 ---
+Work on Art, Program, Design
+
 Little squirrel trying to survive in dangerous forest. Eat nuts to gain stamina, find Nest to gain addition life.
 
 My very first [Game Maker](https://www.yoyogames.com/gamemaker) project! also my second [GBJAM](https://itch.io/jam/gbjam-5) game. I had a quite fun time in GM!

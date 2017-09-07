@@ -42,14 +42,6 @@ $('img.svg').each(function(){
     $img.replaceWith($svg);
   }, 'xml');
 });
-// Initialized profile item width and height
-$('.portfolio-item').each(function() {
-  $(this).css( {
-    width : {{ site.portfolio.img_width }} + 'px',
-    height : {{ site.portfolio.img_height }} + 'px',
-    margin : {{ site.portfolio.grid_space }} + 'px'
-  });
-});
 // Initial Isotope filters and Portfolio item hover effect
 $(document).ready(function() {
   var $container = $('.portfolio');
@@ -99,7 +91,7 @@ $(document).ready(function() {
   $('.portfolio').find('.img-overlay').hover(showHover, showNormal);
 
   function showHover() {
-    if($(this).data('hover') != '') {
+    if($(this).data('hover') != '' && $(this).data('hover') != $(this).data('normal')) {
       $(this).css(
         'background-image', 'url(' + $(this).data('hover') + ')'
       );
@@ -107,7 +99,7 @@ $(document).ready(function() {
   }
 
   function showNormal() {
-    if($(this).data('normal') != '') {
+    if($(this).data('normal') != '' && $(this).data('normal') != $(this).data('hover')) {
       $(this).css(
         'background-image', 'url(' + $(this).data('normal') + ')'
       );

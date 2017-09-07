@@ -3,31 +3,28 @@
         {% if include.title %}
         <h3>{{ include.title }}</h3>{% endif %}
         <div class="recentitems portfolio">
-            {% for project in site.projects reversed limit:include.limit %}
+          {% assign projects = site.projects | sort: 'priority' %}
+            {% for project in projects reversed limit:include.limit %}
 
-            {% assign thumbnail_path = '' %}
-            {% assign directory_url = 'assets/img' | append: project.url | prepend: site.baseurl %}
-            {% for file in site.static_files %}
-            {% if file.path contains directory_url %}
-            {% if file.path contains 'thumbnail' %}
-                {% assign asset = file.path | join: '|' | append: '|' %}
-                {% assign thumbnail_path = thumbnail_path | append: asset %}
-            {% endif %}
-            {% endif %}
-            {% endfor %}
-            {% assign thumbnail_path = thumbnail_path | split: '|' | sort %}
+            {% capture all_asset_path %}
+            {% include get_relative_assets directory='img' url=project.url find='thumbnail' %}
+            {% endcapture %}
+            {% assign all_asset_path = all_asset_path | strip_newlines | strip | split: '|' | sort %}
+
 
             {% if project.tags contains 'HIDE' %}
-            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' }}" style="width: {{ site.portfolio.img_width }}px; height: {{ site.portfolio.img_height }}px;">
+            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' }}" style="width: {{ site.portfolio.img_width }}px; height: {{ site.portfolio.img_height }}px; margin: {{ site.portfolio.grid_space }}px;">
             {% else %}
-            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' | append: ' SAFE' }}" style="width: {{ site.portfolio.img_width }}px; height: {{ site.portfolio.img_height }}px;">
+            <div class="portfolio-item graphic-design {{ project.tags | join: ' ' | append: ' SAFE' }}" style="width: {{ site.portfolio.img_width }}px; height: {{ site.portfolio.img_height }}px; margin: {{ site.portfolio.grid_space }}px;">
             {% endif %}
+
+            
 
             {% if site.hoverEx %}
 
             <div class="he-wrap tpl6">
                 <a href="{{ project.url | prepend: site.baseurl }}">
-                    <div class="img-overlay" data-normal="{{ thumbnail_path | first }}" data-hover="{{ thumbnail_path | last }}" style="background-image: url('{{ thumbnail_path | first }}')" alt="{{ project.alt }}">
+                    <div class="img-overlay" data-normal="{{ all_asset_path | first }}" data-hover="{{ all_asset_path | last }}" style="background-image: url('{{ all_asset_path | first }}')" alt="{{ project.alt }}">
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <h3 class="a1" data-animate="flipInUp">{{ project.title }}</h3>
@@ -46,9 +43,9 @@
 
             <div class="project-panel">
                 <a href="{{ project.url | prepend: site.baseurl }}">
-                    <div class="img-overlay" data-normal="{{ thumbnail_path | first }}" data-hover="{{ thumbnail_path | last }}" style="background-image: url('{{ thumbnail_path | first }}')" alt="{{ project.alt }}">
+                    <div class="img-overlay" data-normal="{{ all_asset_path | first }}" data-hover="{{ all_asset_path | last }}" style="background-image: url('{{ all_asset_path | first }}')" alt="{{ project.alt }}">
                         <div>
-                            <div class="project-content project_description bg-gradient-4-6">
+                            <div class="project-content project_description bg-gradient-4-8">
                                 <h3>{{ project.title }}</h3>
 
                                 <div class="project-subtitle">

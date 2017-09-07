@@ -21,6 +21,8 @@ alts:
 - 
 - Binaural recording gears
 ---
+Work on Program, Design
+
 Taipei Childrens Amusement Park VR Tour, you can experiencing most of game, with us! With Matthew Lien!
 
 We co-op with musician Matthew Lien, Bring Binaural recording sound to VR media!

@@ -14,13 +14,12 @@ tags:
 - Game
 - DoujinGame
 - Commission
+
+priority: -1
 ---
-ある二人の女子高生はラブラブの百合である。
-ヨーロッパでの卒業旅行中に、ヒロインの優子の恋人であるアリスは人さらい集団に誘拐された。
-その後、優子はアリスが少しずつ道にパン屑を落としてたことを発見し、そのしるしを辿って、罰当たりの人さらい集団を見つけ出すことにした。
-道場で育った優子は小さい頃から父親に武術を教わっている。
-その優子はアリスを救い出す事に成功できるか?
-あるいは、アリスは人さらい集団に酷いことをされるのか?
+Work on Program
+
+Side scrolling beat 'em up game which Yuri must rescue friend Alice from bunch of mob.
 
 <div class="button-group">
 <a href="http://www.dlsite.com/maniax/work/=/product_id/RJ131642.html" target="_blank"><button type="button" class="btn btn-theme">Shop</button></a>

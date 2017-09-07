@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@import url("prettyPhoto.css") screen;
+@import url("hoverex-all.css") screen;
+
+#social .svg {
+  fill: white;
+  width: 30px;
+  height: 30px;
+}

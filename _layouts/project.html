@@ -19,10 +19,11 @@ layout: default
             {% for i in all_asset_path %}
             {% if i contains 'cover' %}
                 {% assign type = i | split: '.' | last %}
+                {% assign img_size = i | asset_img_size %}
                 {% if type == 'jpg' or type == 'jpeg' or type == 'png' or type == 'gif' %}
-                <img class="img-responsive" style="max-height: 600px; margin: 0 auto;" src="{{ i | prepend: site.baseurl }}" alt="">
+                <img class="img-responsive" style="height: {{ img_size | last }}; max-height: 600px; margin: 0 auto;" src="{{ i | prepend: site.baseurl }}" alt="">
                 {% else %}
-                <video autoplay loop muted class="col-xs-12" style="max-height: 600px; margin: 0 auto;">
+                <video autoplay loop muted class="col-xs-12" style="height: {{ img_size | last }}; max-height: 600px; margin: 0 auto;">
                 <source src="{{ i | prepend: site.baseurl }}" type="video/{{ type }}">
                 </video>
                 {% endif %}

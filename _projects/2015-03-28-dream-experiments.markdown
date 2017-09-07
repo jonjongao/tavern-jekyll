@@ -15,9 +15,14 @@ tags:
 - Commission
 - Unity
 - DoujinGame
+
+priority: -1
 ---
-ある日夢の中で、俺はずっと憧れたアイドル・御○美○と出会った。俺は必死で彼女を口説こうとした。
-彼女を押し倒してエッチなことをすると妄想したが、まさか彼女はめちゃくちゃに強くて、俺をビリビリさせた。さすが最強電撃娘だ。彼女を押し倒す欲望がさらに強くなった。
+Work on Program, Design, Particle, SFX
+
+ARPG Game I work with Tenson, Dream experiments is melee only ARPG with Musou style.
+
+I start developing the [Combat system](/codes/combo-module/), for sake of future developing.
 
 <div class="button-group">
 <a href="http://www.dlsite.com/maniax/work/=/product_id/RJ152943.html" target="_blank"><button type="button" class="btn btn-theme">Shop</button></a>

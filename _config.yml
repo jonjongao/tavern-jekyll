@@ -53,7 +53,7 @@ social:
     url: mailto:rosa89n20@gmail.com
   - title: Twitter
     icon: /assets/svg/twitter-logo.svg
-    url: https://twitter.com/jongaodev
+    url: https://twitter.com/jongaogame
   - title: Tumblr
     icon: /assets/svg/tumblr-logo.svg
     url: https://rosa89n20.tumblr.com
@@ -83,7 +83,8 @@ social:
 about:
   avatar: /assets/img/about/avatar.jpg
   name: Jon Gao
-  description: "Hello! I'm Jon, aka Rosa on social media.<br>
+  description: "Hello! I'm Jon, chinese name 高炯矗, aka Rosa or rosa89n20 on social media.<br>
+   Just call me Jon if you getting confused already :D<br>
    Game developer, Illustrator and Hobby Maker in Taipei, Taiwan.<br>
    Graduated from Design school, Self-taught program since college.<br>
    I love play Game Jam with friends, Share dev log on social media, Watch Youtuber play my game and suffering!<br>
@@ -98,6 +99,9 @@ about:
    <br>
    Contact me via: rosa89n20@gmail.com"
   experience:
+    - job: Technological Game Designer
+      name: Playerium
+      time: Jul 2017 - Feb 2018
     - job: Programer
       name: CSoft Taiwan
       time: Jul 2016 - Mar 2017

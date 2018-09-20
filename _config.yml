@@ -4,7 +4,7 @@ author: Jon Gao
 description: "Game Developer, 2D Artist, Program Ranger. I love making video game, art and helping people, dreaming to become tavern master one day."
 analytics: UA-46567973-4 #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "https://rosa89n20.github.io"
+url: "https://jonjongao.github.io"
 
 # Component toggle
 header:
@@ -53,13 +53,13 @@ social:
     url: mailto:rosa89n20@gmail.com
   - title: Twitter
     icon: /assets/svg/twitter-logo.svg
-    url: https://twitter.com/jongaogame
+    url: https://twitter.com/jonjongao
   - title: Tumblr
     icon: /assets/svg/tumblr-logo.svg
     url: https://rosa89n20.tumblr.com
   - title: Github
     icon: /assets/svg/github-logo.svg
-    url: https://github.com/rosa89n20
+    url: https://github.com/jonjongao
   - title: GameJolt
     icon: /assets/svg/gamejolt-logo.svg
     url: http://gamejolt.com/@rosa89n20
@@ -83,7 +83,7 @@ social:
 about:
   avatar: /assets/img/about/avatar.jpg
   name: Jon Gao
-  description: "Hello! I'm Jon, chinese name 高炯矗, aka Rosa or rosa89n20 on social media.<br>
+  description: "Hello! I'm Jon, chinese name 高炯矗, rosa89n20 or jonjongao on social media.<br>
    Just call me Jon if you getting confused already :D<br>
    Game developer, Illustrator and Hobby Maker in Taipei, Taiwan.<br>
    Graduated from Design school, Self-taught program since college.<br>

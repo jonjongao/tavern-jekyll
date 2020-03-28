@@ -96,6 +96,14 @@ $(document).ready(function() {
         'background-image', 'url(' + $(this).data('hover') + ')'
       );
     }
+      
+    $(this).find('.toggle-visual').css(
+        'visibility', 'visible'
+      );
+      
+      $(this).closest('.project-panel').css({
+          top: '-10px'
+      });
   }
 
   function showNormal() {
@@ -104,6 +112,14 @@ $(document).ready(function() {
         'background-image', 'url(' + $(this).data('normal') + ')'
       );
     }
+      
+    $(this).find('.toggle-visual').css(
+        'visibility', 'hidden'
+      );
+      
+            $(this).closest('.project-panel').css({
+          top: '0px'
+      });
   }
 });
 // Responsive Portfolio
@@ -139,15 +155,14 @@ $(document).ready(function() {
 			var winWidth = $('#portfoliowrap').width(),
 			columnNumber = 1;
 
-      console.log(winWidth);
 
-			if (winWidth > {{ site.portfolio.img_width }} * 4 + {{ site.portfolio.grid_space }} * 8) {
+			if (winWidth > {{ site.portfolio.img_width }} * 4 + {{ site.portfolio.margin_right }} * 8) {
 				columnNumber = 4;
-			} else if (winWidth > {{ site.portfolio.img_width }} * 3 + {{ site.portfolio.grid_space }} * 6) {
+			} else if (winWidth > {{ site.portfolio.img_width }} * 3 + {{ site.portfolio.margin_right }} * 6) {
 				columnNumber = 3;
-			} else if (winWidth > {{ site.portfolio.img_width }} * 2 + {{ site.portfolio.grid_space }} * 4) {
+			} else if (winWidth > {{ site.portfolio.img_width }} * 2 + {{ site.portfolio.margin_right }} * 4) {
 				columnNumber = 2;
-			} else if (winWidth > {{ site.portfolio.img_width }} + {{ site.portfolio.grid_space }} * 2) {
+			} else if (winWidth > {{ site.portfolio.img_width }} + {{ site.portfolio.margin_right }} * 2) {
 				columnNumber = 1;
 			}
 				return columnNumber;
@@ -158,12 +173,15 @@ $(document).ready(function() {
 				columnNumber = getColumnNumber(),
 				itemWidth = Math.floor(winWidth / columnNumber);
 
-        $container.width(columnNumber * {{ site.portfolio.img_width }} + (columnNumber * 2) * {{ site.portfolio.grid_space }});
+        $container.width(columnNumber * {{ site.portfolio.img_width }} + (columnNumber * 2) * {{ site.portfolio.margin_right }});
+        
 
 				$container.find('.portfolio-item').each(function() {
 					$(this).css( {
 					width : {{ site.portfolio.img_width }} + 'px',
-          margin : {{ site.portfolio.grid_space }} + 'px'
+                    marginTop : {{ site.portfolio.margin_top }} + 'px',
+                    marginRight : {{ site.portfolio.margin_right }} + 'px', marginBottom : {{ site.portfolio.margin_bottom }} + 'px',
+                    marginLeft : {{ site.portfolio.margin_left }} + 'px'
 				});
 			});
 		}

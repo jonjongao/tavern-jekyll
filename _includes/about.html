@@ -42,7 +42,11 @@
                 </div>
             </div>
         </div>
-
+        
+        {% comment %}
+        如果無設置_config中的carousel，則不顯示幻燈片
+        {% endcomment %}
+        {% if site.about.carousel.size > 0 %}
         <div class="col-md-12">
           <div id="about-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -83,6 +87,7 @@
             </a>
           </div>
         </div>
+        {% endif %}
 
     </div>
 </div>

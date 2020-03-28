@@ -11,9 +11,9 @@ header:
   color: "#000000"
   image: /assets/img/header-background.jpg
 navbar:
-  enabled: false
+  enabled: true
 content_guard: false
-hoverEx: false
+project_style: "2"
 
 # Build settings
 markdown: kramdown
@@ -135,7 +135,10 @@ about:
 portfolio:
   img_width: 300
   img_height: 300
-  grid_space: 10
+  margin_top: 10
+  margin_right: 10
+  margin_bottom: 10
+  margin_left: 10
 
 # Default value for post across all
 defaults:

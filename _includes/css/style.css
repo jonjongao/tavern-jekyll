@@ -8,8 +8,7 @@
 	URL: http://alvarez.is
 
 ################################################################# */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
 
@@ -26,12 +25,12 @@ body {
 	margin: 0;
 	height: 100%;
 	color: {{ site.colors.secondary }};
-	font-family: 'Lato', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 400;
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 700;
 	color: #dcdcdc;
 }
@@ -39,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	padding: 0;
 	margin-bottom: 12px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
@@ -109,7 +108,7 @@ a:focus {
 }
 
 .navbar-brand {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 900;
 }
 
@@ -519,7 +518,7 @@ csmall {
 	}
 
 .popular-posts li em {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 12px;
 	color: #b3b3b3
 	}
@@ -545,10 +544,9 @@ a.anchor{
 	Custom Element
 ------------------*/
 
-.project-subtitle {
-	height: 24px;
-	color: #ffffff;
-	padding: 0px 10px;
+.project-header {
+    height: 26px;
+    display: block;
 }
 
 .project-tags {
@@ -604,12 +602,15 @@ a.anchor{
 	height:100%;
 	width:100%;
 	text-align:center;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 .project-panel {
 	width: 100%;
 	height: 100%;
+    position: relative;
+    top: 0px;
+    transition: top 0.25s ease-out;
 }
 
 .project-content {
@@ -618,7 +619,7 @@ a.anchor{
 	height: 100px;
 	top: 200px;
 	padding: 5px;
-	border-radius: 0px 0px 15px 15px;
+	border-radius: 0px 0px 10px 10px;
 }
 
 .bg-gradient-0-5 {
@@ -670,7 +671,7 @@ a.anchor{
 		height: {{ site.portfolio.img_height }}px;
 		transition: background 250ms ease-in;
 		-webkit-transition: background 250ms ease-in;
-		border-radius: 15px;
+		border-radius: 10px;
 }
 
 .portfolio .bg-offset {
@@ -681,7 +682,7 @@ a.anchor{
 		height: {{ site.portfolio.img_height }}px;
 		transition: background 250ms ease-in;
 		-webkit-transition: background 250ms ease-in;
-		border-radius: 15px;
+		border-radius: 10px;
 }
 
 .no-gutters {

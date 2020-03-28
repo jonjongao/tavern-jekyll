@@ -1,0 +1,20 @@
+---
+layout: project
+title: "公共電視-Kidz"
+alt: Little Fox on the journey of restore family legacy manor by stamping leaf and collecting seed.
+date: 2018-08-10 12:00:00
+genre: 
+platform:
+- pc
+
+tags:
+- Game
+priority: 1
+---
+Work on Program, Game Design, SFX, Particle and UI Effects
+
+**Cui Cui** is about little fox on the journey of restore family legacy garden by stamping leaf and collecting seed.
+
+Unlock new tree, plant, feed and grow! 
+
+This's the 2nd project I work with my wife, We experiment random game idea while I teach her 2D game developing process and required knowledge(ex: Making Spritesheet, Important of Sprite pivot, Unify Sprite scale etc.)
